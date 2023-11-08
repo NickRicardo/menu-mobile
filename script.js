@@ -6,7 +6,11 @@ function toggleMenu(event) {
     nav.classList.toggle('active');
     const active = nav.classList.contains('active');
     event.currentTarget.setAttribute('aria-expanded', active);
-    if(active) event.currentTarget.setAttribute('aria-label', 'Fechar menu')
+    if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar menu');
+    }else{
+        event.currentTarget.setAttribute('aria-label', 'Abrir menu');
+    }
 
 }
 
